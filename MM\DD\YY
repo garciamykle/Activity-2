@@ -1,0 +1,82 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+int month,date,year;
+
+cout << "Enter your Birth month: (1-12)\n";
+cin >> month; 
+cout << "Enter your Birth date: (1-31)\n";
+cin >> date;
+cout << "Enter your Birth year: \n";
+cin >> year;
+
+// MM/DD/YY
+switch (month)
+	{
+		case 1: 
+		cout << "January " << date << ", " << year << endl; 
+		break; 
+		
+		case 2: 
+		 if (month = 2 && date > 28)
+			{
+				cout << "This is an invalid date!"; 
+			}
+			
+		else
+			{
+			cout << "February " << date << ", " << year << endl;
+			}		
+		break; 
+		
+		case 3: 
+		cout << "March " << date << ", " << year << endl; 
+		break;
+		
+		case 4: 
+		cout << "April " << date << ", " << year << endl; 
+		break; 
+		
+		case 5: 
+		cout << "May " << date << ", " << year << endl; 
+		break; 
+		
+		case 6: 
+		cout << "June " << date << ", " << year << endl; 
+		break; 
+		
+		case 7: 
+		cout << "July " << date << ", " << year << endl; 
+		break; 
+	
+		case 8: 
+		cout << "August " << date << ", " << year << endl; 
+		break;
+		
+		case 9: 
+		cout << "September " << date << ", " << year << endl; 
+		break;  	
+		
+		case 10: 
+		cout << "October " << date << ", " << year << endl; 
+		break; 	
+		
+		case 11: 
+		cout << "November " << date << ", " << year << endl; 
+		break; 	
+		
+		case 12: 
+		cout << "December " << date << ", " << year << endl; 
+		break; 	
+		
+			
+	}
+
+
+return 0;
+
+}
